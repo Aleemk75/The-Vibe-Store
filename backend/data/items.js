@@ -1,0 +1,178 @@
+/**
+ * In-memory shoes data with images.
+ * Brands: Nike, Comet, Puma, Adidas, LV, Skechers, etc.
+ */
+const COMET_IMAGE = "https://www.wearcomet.com/cdn/shop/files/Lateral-view-min_dfbee999-ad24-4606-8a4b-4b5b4fbaf7d2.jpg?v=1701407958&width=1066";
+
+const items = [
+  {
+    id: 1,
+    name: "Nike Dunk High Green Satin",
+    description: "Classic high-top sneakers with premium green satin finish. Iconic Nike style.",
+    price: 180.00,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=800&fit=crop",
+  },
+  {
+    id: 2,
+    name: "Comet Lateral View Sneakers",
+    description: "Premium lifestyle sneakers with clean lateral design. Comfort meets style.",
+    price: 165.00,
+    image: COMET_IMAGE,
+  },
+  {
+    id: 3,
+    name: "Puma RS-X Running Shoes",
+    description: "Bold retro running shoes with chunky sole. Maximum comfort for all-day wear.",
+    price: 120.00,
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=800&h=800&fit=crop",
+  },
+  {
+    id: 4,
+    name: "Adidas Ultraboost 22",
+    description: "Legendary Boost cushioning. Lightweight running shoes for performance.",
+    price: 190.00,
+    image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=800&fit=crop",
+  },
+  {
+    id: 5,
+    name: "Louis Vuitton Trainer",
+    description: "Luxury athletic sneakers with LV monogram details. Statement streetwear.",
+    price: 1090.00,
+    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=800&fit=crop",
+  },
+  {
+    id: 6,
+    name: "Skechers D'Lites",
+    description: "Chunky platform sneakers with memory foam insole. Comfort and trend in one.",
+    price: 85.00,
+    image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&h=800&fit=crop",
+  },
+  {
+    id: 7,
+    name: "Nike Air Max 90",
+    description: "Timeless Air Max with visible cushioning. A streetwear essential.",
+    price: 130.00,
+    image: "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=800&h=800&fit=crop",
+  },
+  {
+    id: 8,
+    name: "Adidas Stan Smith",
+    description: "Classic white leather tennis shoes. Minimalist design that never goes out of style.",
+    price: 95.00,
+    image: "https://images.unsplash.com/photo-1587563871167-1ee67e53c518?w=800&h=800&fit=crop",
+  },
+  {
+    id: 9,
+    name: "Puma Suede Classic",
+    description: "Iconic suede sneakers with padded collar. Vintage basketball vibe.",
+    price: 80.00,
+    image: "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=800&h=800&fit=crop",
+  },
+  {
+    id: 10,
+    name: "Skechers Go Walk",
+    description: "Slip-on walking shoes with 5GEN cushioning. Lightweight and flexible.",
+    price: 75.00,
+    image: "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800&h=800&fit=crop",
+  },
+  {
+    id: 11,
+    name: "Nike Air Force 1",
+    description: "The legend. All-white leather basketball sneakers. Clean and versatile.",
+    price: 100.00,
+    image: "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=800&h=800&fit=crop",
+  },
+  {
+    id: 12,
+    name: "Comet Low Top White",
+    description: "Clean low-top sneakers in white. Everyday comfort from Comet.",
+    price: 140.00,
+    image: COMET_IMAGE,
+  },
+  {
+    id: 13,
+    name: "Adidas Samba OG",
+    description: "Original indoor football classic. Leather and gum sole. Forever in style.",
+    price: 100.00,
+    image: "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=800&h=800&fit=crop",
+  },
+  {
+    id: 14,
+    name: "Puma Future Rider",
+    description: "Retro-inspired sneakers with mixed materials. Stand out on the streets.",
+    price: 90.00,
+    image: "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=800&h=800&fit=crop",
+  },
+  {
+    id: 15,
+    name: "Skechers Arch Fit",
+    description: "Podiatrist-designed arch support. All-day comfort for work or travel.",
+    price: 110.00,
+    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=800&fit=crop",
+  },
+  {
+    id: 16,
+    name: "Nike Blazer Mid",
+    description: "Vintage basketball silhouette. Leather upper with rubber waffle outsole.",
+    price: 105.00,
+    image: "https://images.unsplash.com/photo-1518002171953-a080ee817e1f?w=800&h=800&fit=crop",
+  },
+  {
+    id: 17,
+    name: "Louis Vuitton Archlight",
+    description: "Oversized luxury sneakers with sculptural sole. High-fashion statement.",
+    price: 990.00,
+    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800&h=800&fit=crop",
+  },
+  {
+    id: 18,
+    name: "Adidas Gazelle",
+    description: "Suede classic from the 60s. Simple, durable, and always cool.",
+    price: 90.00,
+    image: "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=800&h=800&fit=crop",
+  },
+  {
+    id: 19,
+    name: "Puma Cali Sport",
+    description: "Women's classic with California vibes. Leather and mesh combo.",
+    price: 85.00,
+    image: "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=800&h=800&fit=crop",
+  },
+  {
+    id: 20,
+    name: "Skechers Relaxed Fit",
+    description: "Relaxed fit sneakers with air-cooled memory foam. Easy slip-on style.",
+    price: 70.00,
+    image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=800&h=800&fit=crop",
+  },
+  {
+    id: 21,
+    name: "Nike Jordan 1 Low",
+    description: "Low-top version of the icon. Leather construction, timeless look.",
+    price: 110.00,
+    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=800&h=800&fit=crop",
+  },
+  {
+    id: 22,
+    name: "Comet Runner Green",
+    description: "Lightweight running-inspired sneakers. Green accent from Comet.",
+    price: 155.00,
+    image: COMET_IMAGE,
+  },
+  {
+    id: 23,
+    name: "Adidas NMD R1",
+    description: "Boost midsole and urban style. Primeknit upper for breathability.",
+    price: 150.00,
+    image: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=800&h=800&fit=crop",
+  },
+  {
+    id: 24,
+    name: "Puma Slipstream",
+    description: "Basketball heritage meets modern design. Chunky and comfortable.",
+    price: 115.00,
+    image: "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=800&h=800&fit=crop",
+  },
+];
+
+module.exports = items;
