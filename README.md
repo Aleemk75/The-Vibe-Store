@@ -24,16 +24,10 @@ cp .env.example .env   # optional; API URL defaults to http://localhost:5000
 
 **Terminal 1 – API**
 
-```bash
-cd backend
 npm start
-```
-
-Server runs at `http://localhost:5000` (or `process.env.PORT`).
 
 **Terminal 2 – Frontend**
 
-```bash
 cd frontend
 npm run dev
 ```
@@ -76,11 +70,23 @@ vibe-dashboard/
 └── README.md
 ```
 
-## API
+## Images
 
-- **GET** `/api/items`  
+Below are some visual examples showing the dashboard functionality:
+
+![Dashboard Overview](Images/Dashboard%20Overview.png)
+*Dashboard overview with item cards, search, and pagination.*
+
+![Search Example](Images/Search%20view.png)
+*Search functionality in action.*
+
+![Pagination ](Images/Pagination.png)
+*Empty state when no items match the search.*
+
+> Images are located in the `Images/` folder. Add your own screenshots for more examples.
+
+## API
   Returns all items.
-- **GET** `/api/items?search=term`  
   Returns items whose `name` contains `term` (case-insensitive).
 
 Response: `{ "items": [{ "id", "name", "description", "price" }, ...] }`
