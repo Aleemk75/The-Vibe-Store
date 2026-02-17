@@ -24,6 +24,7 @@ cp .env.example .env   # optional; API URL defaults to http://localhost:5000
 
 **Terminal 1 – API**
 
+cd backend
 npm start
 
 **Terminal 2 – Frontend**
@@ -36,7 +37,6 @@ App runs at `http://localhost:3000`.
 
 ## Project structure
 
-```
 vibe-dashboard/
 ├── backend/
 │   ├── data/
@@ -68,20 +68,31 @@ vibe-dashboard/
 │   ├── tailwind.config.ts
 │   └── tsconfig.json
 └── README.md
+
+
 ```
 
 ## Images
 
 Below are some visual examples showing the dashboard functionality:
 
-![Dashboard Overview](Images/Dashboard%20Overview.png)
-*Dashboard overview with item cards, search, and pagination.*
+<p align="center">
+  <img src="Images/Dashboard%20Overview.png" alt="Dashboard Overview" width="600" />
+  <br>
+  <em>Dashboard overview with item cards, search, and pagination.</em>
+</p>
 
-![Search Example](Images/Search%20view.png)
-*Search functionality in action.*
+<p align="center">
+  <img src="Images/Search%20view.png" alt="Search View" width="600" />
+  <br>
+  <em>Search functionality in action.</em>
+</p>
 
-![Pagination ](Images/Pagination.png)
-*Empty state when no items match the search.*
+<p align="center">
+  <img src="Images/Pagination.png" alt="Pagination" width="600" />
+  <br>
+  <em>Pagination component in action.</em>
+</p>
 
 > Images are located in the `Images/` folder. Add your own screenshots for more examples.
 
