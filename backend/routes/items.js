@@ -5,13 +5,7 @@ const router = express.Router();
 
 const ITEMS_PER_PAGE = 9;
 
-/**
- * GET /api/items
- * Query: 
- *   - search (optional) - case-insensitive filter by name
- *   - page (optional) - page number (default: 1)
- *   - limit (optional) - items per page (default: 9)
- */
+
 router.get("/", (req, res) => {
   try {
     const search = (req.query.search || "").trim().toLowerCase();
