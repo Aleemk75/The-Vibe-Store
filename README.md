@@ -20,10 +20,10 @@ npm install
 cp .env.example .env   # optional; API URL defaults to http://localhost:5000
 ```
 
+
 ## Run
-
 **Terminal 1 – API**
-
+```bash
 cd backend
 npm start
 
