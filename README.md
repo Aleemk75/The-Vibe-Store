@@ -26,13 +26,12 @@ cp .env.example .env   # optional; API URL defaults to http://localhost:5000
 ```bash
 cd backend
 npm start
-
+```
 **Terminal 2 – Frontend**
-
+```bash
 cd frontend
 npm run dev
 ```
-
 App runs at `http://localhost:3000`.
 
 ## Project structure
