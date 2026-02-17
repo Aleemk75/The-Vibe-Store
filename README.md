@@ -20,22 +20,30 @@ npm install
 cp .env.example .env   # optional; API URL defaults to http://localhost:5000
 ```
 
-
+vibe-dashboard/
 ## Run
+
 **Terminal 1 – API**
+
 ```bash
 cd backend
 npm start
 ```
+
+Server runs at `http://localhost:5000` (or `process.env.PORT`).
+
 **Terminal 2 – Frontend**
+
 ```bash
 cd frontend
 npm run dev
 ```
+
 App runs at `http://localhost:3000`.
 
 ## Project structure
 
+```
 vibe-dashboard/
 ├── backend/
 │   ├── data/
@@ -67,8 +75,6 @@ vibe-dashboard/
 │   ├── tailwind.config.ts
 │   └── tsconfig.json
 └── README.md
-
-
 ```
 
 ## Images
